@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# Backend-Rails-Juego-Cartas-Uno-
+>>>>>>> 2569e4c746b19bc77d012e43488a4d8f4b4ac7ca

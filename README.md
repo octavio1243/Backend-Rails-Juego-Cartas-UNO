@@ -7,5 +7,14 @@
 
 | Method HTTP | Endpoint             | Body | Description                      | Authorization requered | 
 |-------------|----------------------|------|----------------------------------|------------------------|
-| POST        |/v1/users/register    | {"name":"foo","email":"foo@foo.com","password":"foo1234"} | Permite registrarse | No |
+| POST | /v1/users/register | {"name":"foo","email":"foo@foo.com","password":"foo1234"} | Permite registrarse | No |
+| POST | /v1/users/login |  | {"email":"foo@foo.com","password":"foo1234"} | No |
+
+|  |  |  |  | Yes |
+|  |  |  |  | Yes |
+|  |  |  |  | Yes |
+|  |  |  |  | Yes |
+|  |  |  |  | Yes |
+
+
 

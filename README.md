@@ -1,5 +1,11 @@
 # Juego de cartas UNO (Backend en Rails)
 
+## ¿Cómo ejecutar?
+1) Instalar dependencias:
+   _bundle install_
+3) Correr servidor:
+   _rails server_
+
 ## Diagrama de clases
 ![](./DiagramaClases.jpg)
 

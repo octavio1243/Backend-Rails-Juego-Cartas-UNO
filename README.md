@@ -26,7 +26,6 @@
 | PUT | /v1/games/:token/scores/:id | - | Incrementar score | Yes | - |
 | GET | /v1/games/:token/cards/:user_id | - | Obtener cartas de un usuario | Yes | {"amount_cards":2, "cards": [{"id": 7,"url":"/..."}, {"id": 6, "url": "/..."}]} |
 | POST | /v1/games/:token/cards | - | Tomar una carta del mazo  | Yes | {"card": {"id": 7,"url": "/..."}} |
-
 | PUT | /v1/games/:token/cards/:card_id | - | Tirar una carta | Yes | - |
 | GET | /v1/games/iGO2Oj/card | - | Obtener ultima carta tirada a la mesa | Yes | {"card": {"id": 7, "url": "/..."}} |
 | PUT | /v1/games/:token/cards | - | Restablecer la partida (cartas de los jugadores) | Yes | - |

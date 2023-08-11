@@ -22,8 +22,12 @@
 | PUT | /v1/games/:token/teams/:team_id | - | Unirse a una partida como equipo | Yes | - |
 | POST | /v1/games/:token/users/ | - | Unirse a una partida como usuario | Yes | - |
 | GET | /v1/games/:token/scores |  | Obtener lista de usuarios y grupo al que pertenecen (en caso de que lo tengan) | Yes | {"users":[{"id":3,"team":{"id":3,"name":"foo 2"}},...]} |
+| GET | /v1/games/:token/scores | - | Ver score de todos los jugadores/grupos (según corresponda) | Yes | {“scores”:[{“id”: 4, “name”:”foo”, ”score”:4},…]} |
+| PUT | /v1/games/:token/scores/:id | - | Incrementar score | Yes | - |
+| GET | /v1/games/:token/cards/:user_id | - | Obtener cartas de un usuario | Yes | {"amount_cards":2, "cards": [{"id": 7,"url":"/..."}, {"id": 6, "url": "/..."}]} |
+| POST | /v1/games/:token/cards | - | Tomar una carta del mazo  | Yes | {"card": {"id": 7,"url": "/..."}} |
 
-|  |  |  |  | Yes |
-|  |  |  |  | Yes |
-|  |  |  |  | Yes |
-|  |  |  |  | Yes |
+| PUT | /v1/games/:token/cards/:card_id | - | Tirar una carta | Yes | - |
+| GET | /v1/games/iGO2Oj/card | - | Obtener ultima carta tirada a la mesa | Yes | {"card": {"id": 7, "url": "/..."}} |
+| PUT | /v1/games/:token/cards | - | Restablecer la partida (cartas de los jugadores) | Yes | - |
+| DELETE | /v1/users | - | Eliminar cuenta | Yes | - |

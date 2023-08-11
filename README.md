@@ -17,12 +17,12 @@
 | GET | /v1/games | - | Obtener mis partidas | Yes | {my_games:[{"game_token": "d6gWgq",},…],other_games: [{"game_token": "d6gWgq",},{"game_token": "…",},…]} |
 | GET | /v1/games/:token | - | Obtener información de la partida | Yes | {“max_groups”: 2,“administrator_id”: 2,“finished”: False,“joined”: True} |
 | PUT | /v1/games/:token | - | Finalizar partida | Yes | - | 
+| POST | /v1/games/:token/teams | {"team_name": "foo"} | Crear un equipo para una partida | Yes | {"team_id": 7} |
+| GET | /v1/games/:token/teams | - | Obtener la lista de equipos para una partida | Yes | {"teams": [{"id": 1,"name": "foo 1",},{"id": 1,"name": "foo 2",}]} |
+| PUT | /v1/games/:token/teams/:team_id | - | Unirse a una partida como equipo | Yes | - |
+| POST | /v1/games/:token/users/ | - | Unirse a una partida como usuario | Yes | - |
+| GET | /v1/games/:token/scores |  | Obtener lista de usuarios y grupo al que pertenecen (en caso de que lo tengan) | Yes | {"users":[{"id":3,"team":{"id":3,"name":"foo 2"}},...]} |
 
-|  |  |  |  | Yes |
-|  |  |  |  | Yes |
-|  |  |  |  | Yes |
-|  |  |  |  | Yes |
-|  |  |  |  | Yes |
 |  |  |  |  | Yes |
 |  |  |  |  | Yes |
 |  |  |  |  | Yes |
